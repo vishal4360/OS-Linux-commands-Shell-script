@@ -389,17 +389,15 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![image49](img/image49.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![image50](img/image50.pngg)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![image51](img/image51.png)
  
 gunzip backup.tar.gz
 ## OUTPUT
@@ -425,7 +423,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![image52](img/image52.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -463,28 +461,24 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![image53](img/image53.png)
+
  
 ls file1
 ## OUTPUT
-![image54](img/image54.png)
 
 echo $?
 ## OUTPUT 
-![image55](img/image55.png)
-
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![image56](img/image56.png)
-
+ 
 abcd
-
+ 
 echo $?
  ## OUTPUT
-![image57](img/image57.png)
+
 
  
 # mis-using string comparisons
@@ -523,7 +517,6 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![image58](img/image58.png)
 
 
 # check file ownership
@@ -551,7 +544,6 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![image59](img/image59.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -598,7 +590,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![image61](img/image61.png)
+
 
 
 # using numeric test comparisons
@@ -641,9 +633,7 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-## OUTPUT
-![image62](img/image62.png)
-
+##OUTPUT
 
 # check if a file
 cat > ifnested.sh 
@@ -721,7 +711,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![image64](img/image64.png)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -737,7 +727,6 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![image65](img/image65.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -772,9 +761,6 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
-
-## output
-![image66](img/image66.png)
  
  
 cat untiltest.sh 
@@ -787,11 +773,7 @@ echo $var1
 var1=$[ $var1 - 25 ]
 done
 ``` 
-
 $ chmod 755 untiltest.sh
-
-## output
-![image67](img/image67.png)
  
  
  
@@ -806,9 +788,7 @@ done
  ```
  
 $ chmod 755 forin1.sh
-
-## OUTPUT 
-![image68](img/image68.png)
+ 
  
 cat forin2.sh 
 ```bash
@@ -834,9 +814,6 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
-
-## output
-![image69](img/image69.png)
  
 cat forin3.sh 
 ```bash
@@ -848,8 +825,6 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
-## output
-![image70](img/image70.png)
  
 cat forin1.sh 
 ```bash
@@ -863,8 +838,6 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
-![image71](img/image71.png)
-
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -886,7 +859,6 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-![image72](img/image72.png)
 
 
 cat forctype.sh 
@@ -900,8 +872,7 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
-## OUTPUT 
-![imae73](img/image73.png)
+## OUTPUT
 
 cat forctype1.sh 
 ```bash
@@ -915,7 +886,6 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-![image74](img/image74.png)
 
 cat fornested1.sh 
 ```bash
@@ -934,7 +904,6 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
- ![image75](img/image75.png)
 
  
 cat forbreak.sh 
@@ -951,16 +920,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
+## OUTPUT
+
 $ chmod 755 forbreak.sh
-
-
+ 
 $ ./forbreak.sh 
  
-## OUTPUT
-![image76](img/image76.png)
-
-
-cat forcontine.sh 
+cat forbreak.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -980,7 +946,6 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
-![image77](img/image77.png)
  
 cat exread.sh 
 ```bash
@@ -995,7 +960,6 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-![image78](img/image78.png)
 
 
  cat exread1.sh
@@ -1006,11 +970,12 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-$ ./exread1.sh 
 
 ## OUTPUT
-![image79](img/image79.png)
 
+
+
+$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -1027,13 +992,12 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-./funcex.sh 
 ## OUTPUT
- ![image80](img/image80.png)
+ ./funcex.sh 
 
  
  ./funcex.sh 1 2
-![image81](img/image81.png)
+
  
 cat argshift.sh
 ```bash
@@ -1047,7 +1011,6 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
-![image82](img/image82.png)
  
  cat argshift1.sh
 ```bash
@@ -1064,8 +1027,6 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
-![image83](img/image83.png)
-
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1080,8 +1041,6 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
-
- ![image84](img/image84.png)
  
  
 cat > nc.awk
@@ -1113,7 +1072,6 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
-![image85](img/image85.png)
  
 cat > palindrome.sh
 ```bash
@@ -1141,7 +1099,6 @@ else
 fi
 ```
 ## OUTPUT 
-![image86](img/image86.png)
 
 
 # RESULT:
